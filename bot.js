@@ -90,7 +90,7 @@ function pick_random_pokemon() {
 function upload_random_hidden_pokemon() {
   console.log('Opening an image...');
     // Remove '_branding' to havae pictures without the PokéDemons's badge
-  var image_path = path.join(__dirname, '/hidden_pokemon_branding/' + pick_random_pokemon()),
+  var image_path = path.join(__dirname, '/hidden_pokemon/' + pick_random_pokemon()),
       b64content = fs.readFileSync(image_path, { encoding: 'base64' });
 
   console.log('Uploading an image...');
@@ -123,7 +123,7 @@ function upload_random_hidden_pokemon() {
 function reveal_hidden_pokemon() {
   console.log('Opening an image...');
   // Remove '_branding' to havae pictures without the PokéDemons's badge
-  var image_path = path.join(__dirname, '/revealed_pokemon_branding/' + pokemon[rand]),
+  var image_path = path.join(__dirname, '/revealed_pokemon/' + pokemon[rand]),
       b64content = fs.readFileSync(image_path, { encoding: 'base64' });
 
   console.log('Uploading an image...');
@@ -153,10 +153,10 @@ function reveal_hidden_pokemon() {
     }
   });
 }
-// if (current_date.getDate() == 2) {
+if (current_date.getDate() == 2) {
   setImmediate(upload_random_hidden_pokemon);
   setTimeout(reveal_hidden_pokemon, 43200000);
-// }
-// else {
-//   console.log("It's not Wednesday.");
-// }
+}
+else {
+  console.log("It's not Wednesday.");
+}
