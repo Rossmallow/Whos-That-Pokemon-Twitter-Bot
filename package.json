@@ -1,0 +1,23 @@
+{
+  "name": "pokedemonswhosthatpokemon",
+  "version": "1.0.0",
+  "description": "A bot that makes posts similar to Who's That Pokemon",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rossmallow/PokeDemons-Whos-That-Pokemon-TwitterBot.git"
+  },
+  "author": "Rossmallow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rossmallow/PokeDemons-Whos-That-Pokemon-TwitterBot/issues"
+  },
+  "homepage": "https://github.com/Rossmallow/PokeDemons-Whos-That-Pokemon-TwitterBot#readme",
+  "dependencies": {
+    "node-twitterbot": "^0.2.2",
+    "twit": "^2.2.5"
+  }
+}
