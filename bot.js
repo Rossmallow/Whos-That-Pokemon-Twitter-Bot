@@ -156,7 +156,7 @@ function reveal_hidden_pokemon() {
 // if (current_date.getDate() == 2) {
   setImmediate(upload_random_hidden_pokemon);
   setTimeout(reveal_hidden_pokemon, 43200000);
-}
+// }
 // else {
 //   console.log("It's not Wednesday.");
 // }
