@@ -154,7 +154,7 @@ function reveal_hidden_pokemon() {
   });
 }
 console.log("today is " + current_date.getDay());
-if (current_date.getDate() == 3) {
+if (current_date.getDay() == 3) {
   setImmediate(upload_random_hidden_pokemon);
   setTimeout(reveal_hidden_pokemon, 43200000);
 }
